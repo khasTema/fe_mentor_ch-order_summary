@@ -1,0 +1,131 @@
+
+*{
+    box-sizing: border-box;
+}
+body,
+h1,
+h2,
+p{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url("images/pattern-background-desktop.svg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    padding-top: 8%;
+}
+
+.summary-card{
+    width: min(90%, 375px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 1px 1px 14px 0px rgba(66,66,66,0.8);
+}
+
+.summary-card_hero{
+    background: url("images/illustration-hero.svg") center no-repeat;
+    background-size: cover;
+    height: 20vh;
+    
+}
+
+.summary-card_main{
+    padding: 25px 45px;
+    text-align: center;
+}
+
+h1{
+    margin-top: 0.5em;
+    font-weight: 900;
+}
+
+p{
+    margin-top: 2em;
+    font-weight: 500;
+    color: gray;
+}
+
+.summary-card_plan-info{
+    margin-top: 2em;
+    padding: 1.2em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color:hsl(225, 100%, 98%);
+}
+
+.plan-info_description{
+    text-align: left;
+    margin-right: 2em;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 1em;
+}
+
+span{
+    font-weight: 500;
+    color: grey;
+}
+
+.change-link{
+    color: #2920cd;
+}
+
+.change-link:hover,
+.change-link:focus{
+    color: #c800ff;
+}
+
+
+.proceed-btn{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 100%;
+    background: #2920cd;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 1em 0;
+    box-shadow: 1px 1px 14px 0px rgba(66,66,66,0.8);
+}
+
+.proceed-btn:hover,
+.proceed-btn:focus{
+    background:  #c800ff;
+}
+
+.cancel-btn{
+   text-decoration: none;
+   color: grey;
+}
+
+.cancel-btn:hover,
+.cancel-btn:focus{
+    color: #000;
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    flex-shrink: 0;
+    position: absolute;
+    bottom: 0; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
